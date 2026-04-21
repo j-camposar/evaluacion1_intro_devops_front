@@ -44,7 +44,7 @@ jobs:
           script: |
               # 1. Login ECR
               REGION=${{ secrets.AWS_REGION }}
-              REGISTRY="677399344972.dkr.ecr.us-east-1.amazonaws.com"
+              REGISTRY="386010203969.dkr.ecr.us-east-1.amazonaws.com"
               
               echo "Realizando login en $REGISTRY..."
               aws ecr get-login-password --region $REGION | docker login --username AWS --password-stdin $REGISTRY
